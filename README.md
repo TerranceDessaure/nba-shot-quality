@@ -1,6 +1,6 @@
 # NBA Shot Quality: Who Makes Their Shots, and Who's Just Taking Good Ones?
 
-**Live app:** [ADD YOUR STREAMLIT LINK HERE]
+**Live app:** [[ADD YOUR STREAMLIT LINK HERE]](https://nba-shot-quality-fdmcevshncauprbyrrn4gc.streamlit.app/)
 
 Raw field goal percentage hides context. A corner three and a contested pull-up are not the same shot, and a center who dunks all game will always out-shoot a guard who creates his own looks. This project separates two skills that box scores mix together:
 
