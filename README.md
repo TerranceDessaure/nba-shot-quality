@@ -35,10 +35,9 @@ My first download silently returned only about half the season: 102,400 shots fr
 
 ## Key findings
 
-- **Top 5 shot makers (per 100 shots):** Luke Kennard, DeAndre Ayton, Jakob Poeltl, Kevin Durant, Cam Spencer
-- **The first model overrated big men.** It compared every rim attempt to the same average, so a dunk counted the same as a contested layup. After I added shot type (dunk, layup, putback, hook, jump shot) to the baseline, **DeAndre Ayton dropped from #2 to #8**, so a large part of his edge came from the easy shots he gets. **Jakob Poeltl only dropped from #3 to #5**, meaning his finishing holds up even against the right comparison.
-- **A player can be good at one skill and poor at the other.** A high shot selection score with negative points above expected means a player gets to good spots but doesn't finish. The coaching takeaway is to keep his shot diet and work on finishing.
-
+- Top 5 shot makers (points above expected per 100 shots): Luke Kennard, Jakob Poeltl, Luka Garza, Nikola Jokić, Cam Spencer
+- The first model overrated some big men. It compared every rim attempt to the same average, so a dunk counted the same as a contested layup. After I added shot type (dunk, layup, putback, hook, jump shot) to the baseline, DeAndre Ayton dropped from #2 to #10, so much of his edge came from the easy shots he gets. Jakob Poeltl moved up from #3 to #2, meaning his finishing is real even against the right comparison. Two centers with similar raw numbers turned out to be very different finishers.
+- A player can be good at one skill and poor at the other. A high shot selection score with negative points above expected means a player gets to good spots but doesn't finish. The coaching takeaway is to keep his shot diet and work on finishing.
 ## Limitations
 
 - The free NBA data doesn't include defender distance, so a wide-open shot and a heavily contested one from the same spot and of the same type are treated as equal.
