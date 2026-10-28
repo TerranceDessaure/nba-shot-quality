@@ -15,10 +15,11 @@ SELECT
     SUM(s.SHOT_MADE_FLAG * CASE WHEN s.SHOT_TYPE = '3PT Field Goal' THEN 3 ELSE 2 END)
         AS actual_points,
     SUM(z.expected_points) AS expected_points
-FROM shots AS s
+FROM shots_typed AS s
 JOIN zone_expected AS z
     ON s.SHOT_ZONE_BASIC = z.SHOT_ZONE_BASIC
    AND s.SHOT_ZONE_AREA = z.SHOT_ZONE_AREA
+   AND s.SHOT_CATEGORY = z.SHOT_CATEGORY
 GROUP BY s.PLAYER_ID, s.PLAYER_NAME
 HAVING COUNT(*) >= ?
 """
@@ -33,6 +34,6 @@ if __name__ == "__main__":
         players.to_sql("player_shot_quality", conn, if_exists="replace", index=False)
 
     print("Best shooters vs. expected:")
-    print(players.head(10).round(1).to_string(index=False))
+    print(print(players.head(10).round(1).to_string(index=False)) if False else players.head(10).round(1).to_string(index=False))
     print("\nWorst shooters vs. expected:")
     print(players.tail(10).round(1).to_string(index=False))
